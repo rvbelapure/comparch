@@ -1,0 +1,39 @@
+Total instruction: 10000000
+Total cycles: 30056336
+Total IPC: 0.332709
+Total D-cache miss: 38067
+Total D-cache hit: 3605488
+Total data hazard: 945244
+Total control hazard : 1772578
+Total DRAM ROW BUFFER Hit: 7296
+Total DRAM ROW BUFFER Miss: 3030
+Total Store-load forwarding: 34
+Total Branch Predictor Mispredictions: 89107
+Total Branch Predictor OK predictions: 1683471
+Total DTLB Hit: 2730118
+Total DTLB Miss: 456687
+
+
+
+THREAD instruction: 6645242 Thread id: 0
+THREAD IPC: 0.221093
+THREAD D-cache miss: 6475 Thread id: 0
+THREAD D-cache hit: 2532093 Thread id: 0
+THREAD data hazard: 745750 Thread id: 0
+THREAD control hazard : 1115719 Thread id: 0
+THREAD Store-load forwarding: 18 Thread id: 0
+THREAD Branch Predictor Mispredictions: 48352 Thread id: 0
+THREAD Branch Predictor OK predictions: 1067367 Thread id: 0
+THREAD DTLB Hit: 2039554 Thread id: 0
+THREAD DTLB Miss: 249507 Thread id: 0
+THREAD instruction: 3354758 Thread id: 1
+THREAD IPC: 0.111616
+THREAD D-cache miss: 31592 Thread id: 1
+THREAD D-cache hit: 1073395 Thread id: 1
+THREAD data hazard: 199494 Thread id: 1
+THREAD control hazard : 656859 Thread id: 1
+THREAD Store-load forwarding: 16 Thread id: 1
+THREAD Branch Predictor Mispredictions: 40755 Thread id: 1
+THREAD Branch Predictor OK predictions: 616104 Thread id: 1
+THREAD DTLB Hit: 690564 Thread id: 1
+THREAD DTLB Miss: 207180 Thread id: 1
