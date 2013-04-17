@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+	echo "Usage: $0 <trace_file>"
+	exit 0
+fi
+
+./sim --print_inst=1 --max_sim_count=inf --print_pipe_freq=1 --trace_file=$1
+

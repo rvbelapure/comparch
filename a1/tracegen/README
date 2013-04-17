@@ -1,0 +1,18 @@
+./tracegen [input] [output] 
+
+/*********************************
+* input format order   
+*       pc addr                 : int:  pc addr, addr should be multiple of 4  
+*	opcode			: string : g_tr_opcode_names[] in string.h
+*	dst			: string: r0 ~ r31  or -1 (if there is no destimation)
+*	num_read_regs	        : int :  0<= * <=2
+*	src[]			: string: r0 ~ r31  or -1 (if there is no source) 
+*	mem_vaddr		: int : LD/ST addr  (int)
+*	mem_size		: int :  data size (int)
+*	cf_type			: string:  (NOT_CF, CF_BR) 
+&       branch_target           : int : target addr 
+*	actually_taken 	        : int : 0 or 1 
+*	mem_type		: string (NOT_MEM, MEM_LD, MEM_ST) 
+***********************************/
+
+
