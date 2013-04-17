@@ -1,0 +1,61 @@
+Total instruction: 31117066
+Total cycles: 98134136
+Total IPC: 0.317087
+Total D-cache miss: 67954
+Total D-cache hit: 12703929
+Total data hazard: 1407575
+Total control hazard : 5392949
+Total DRAM ROW BUFFER Hit: 4982
+Total DRAM ROW BUFFER Miss: 15994
+Total Store-load forwarding: 27
+Total Branch Predictor Mispredictions: 277195
+Total Branch Predictor OK predictions: 5115754
+Total DTLB Hit: 7336005
+Total DTLB Miss: 2717525
+
+
+
+THREAD instruction: 7861921 Thread id: 0
+THREAD IPC: 0.080114
+THREAD D-cache miss: 6082 Thread id: 0
+THREAD D-cache hit: 3318473 Thread id: 0
+THREAD data hazard: 107153 Thread id: 0
+THREAD control hazard : 1320811 Thread id: 0
+THREAD Store-load forwarding: 10 Thread id: 0
+THREAD Branch Predictor Mispredictions: 72416 Thread id: 0
+THREAD Branch Predictor OK predictions: 1248395 Thread id: 0
+THREAD DTLB Hit: 2112324 Thread id: 0
+THREAD DTLB Miss: 605864 Thread id: 0
+THREAD instruction: 3354758 Thread id: 1
+THREAD IPC: 0.0341854
+THREAD D-cache miss: 27845 Thread id: 1
+THREAD D-cache hit: 1408420 Thread id: 1
+THREAD data hazard: 12012 Thread id: 1
+THREAD control hazard : 656859 Thread id: 1
+THREAD Store-load forwarding: 5 Thread id: 1
+THREAD Branch Predictor Mispredictions: 43422 Thread id: 1
+THREAD Branch Predictor OK predictions: 613437 Thread id: 1
+THREAD DTLB Hit: 359301 Thread id: 1
+THREAD DTLB Miss: 538444 Thread id: 1
+THREAD instruction: 4951261 Thread id: 2
+THREAD IPC: 0.050454
+THREAD D-cache miss: 27917 Thread id: 2
+THREAD D-cache hit: 2034328 Thread id: 2
+THREAD data hazard: 12845 Thread id: 2
+THREAD control hazard : 924487 Thread id: 2
+THREAD Store-load forwarding: 3 Thread id: 2
+THREAD Branch Predictor Mispredictions: 60027 Thread id: 2
+THREAD Branch Predictor OK predictions: 864460 Thread id: 2
+THREAD DTLB Hit: 553293 Thread id: 2
+THREAD DTLB Miss: 754400 Thread id: 2
+THREAD instruction: 14949126 Thread id: 3
+THREAD IPC: 0.152334
+THREAD D-cache miss: 6110 Thread id: 3
+THREAD D-cache hit: 5942708 Thread id: 3
+THREAD data hazard: 1275565 Thread id: 3
+THREAD control hazard : 2490792 Thread id: 3
+THREAD Store-load forwarding: 9 Thread id: 3
+THREAD Branch Predictor Mispredictions: 101330 Thread id: 3
+THREAD Branch Predictor OK predictions: 2389462 Thread id: 3
+THREAD DTLB Hit: 4311087 Thread id: 3
+THREAD DTLB Miss: 818817 Thread id: 3

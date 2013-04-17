@@ -1,0 +1,16 @@
+Floating point instructions : 4401
+Integer instructions : 1759153
+Load INstructions497051
+Store Instructions : 400692
+Branch Instructions : 696486
+Integer register reads : 682248
+Floating point register reads : 1
+Integer Register writes : 533457
+Floating Point Register writes : 0
+Multiply Instructions : 1759252
+Dcache Reads : 1039102
+Dcahe Writes : 982186
+Num Sched Accesses : 3987419
+Num Mem Accesses : 7202
+Dcache Read misses : 4071
+Dcache Write Misses : 48370

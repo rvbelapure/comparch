@@ -1,0 +1,50 @@
+Total instruction: 0
+Total cycles: 4
+Total IPC: 0
+Total D-cache miss: 0
+Total D-cache hit: 0
+Total data hazard: 0
+Total control hazard : 0
+Total DRAM ROW BUFFER Hit: 0
+Total DRAM ROW BUFFER Miss: 0
+Total Store-load forwarding: 0
+Total Branch Predictor Mispredictions: 0
+Total Branch Predictor OK predictions: 0
+Total DTLB Hit: 0
+Total DTLB Miss: 0
+
+
+
+THREAD instruction: 0 Thread id: 0
+THREAD IPC: 0
+THREAD D-cache miss: 0 Thread id: 0
+THREAD D-cache hit: 0 Thread id: 0
+THREAD data hazard: 0 Thread id: 0
+THREAD control hazard : 0 Thread id: 0
+THREAD Store-load forwarding: 0 Thread id: 0
+THREAD Branch Predictor Mispredictions: 0 Thread id: 0
+THREAD Branch Predictor OK predictions: 0 Thread id: 0
+THREAD DTLB Hit: 0 Thread id: 0
+THREAD DTLB Miss: 0 Thread id: 0
+THREAD instruction: 0 Thread id: 1
+THREAD IPC: 0
+THREAD D-cache miss: 0 Thread id: 1
+THREAD D-cache hit: 0 Thread id: 1
+THREAD data hazard: 0 Thread id: 1
+THREAD control hazard : 0 Thread id: 1
+THREAD Store-load forwarding: 0 Thread id: 1
+THREAD Branch Predictor Mispredictions: 0 Thread id: 1
+THREAD Branch Predictor OK predictions: 0 Thread id: 1
+THREAD DTLB Hit: 0 Thread id: 1
+THREAD DTLB Miss: 0 Thread id: 1
+THREAD instruction: 0 Thread id: 2
+THREAD IPC: 0
+THREAD D-cache miss: 0 Thread id: 2
+THREAD D-cache hit: 0 Thread id: 2
+THREAD data hazard: 0 Thread id: 2
+THREAD control hazard : 0 Thread id: 2
+THREAD Store-load forwarding: 0 Thread id: 2
+THREAD Branch Predictor Mispredictions: 0 Thread id: 2
+THREAD Branch Predictor OK predictions: 0 Thread id: 2
+THREAD DTLB Hit: 0 Thread id: 2
+THREAD DTLB Miss: 0 Thread id: 2
