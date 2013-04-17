@@ -1,0 +1,10 @@
+#!/bin/bash
+for size in 128 512 1024 2048
+do
+	for assoc in 1 2 4 8 16
+	do
+		echo "Cache Size : "$size" Associativity : "$assoc
+		cat non-mem-trace-cache$size-way$assoc.out | grep IPC
+		echo "_____________________________________"
+	done
+done

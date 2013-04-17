@@ -1,0 +1,27 @@
+#!/bin/bash
+
+mem="mem-trace-"
+nonmem="non-mem-"
+
+mem_file="mem-trace.pzip"
+nonmem_file="non-mem-trace.pzip"
+
+#default
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --trace_file=$mem_file --output_file=$mem"default.out"
+
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --trace_file=$nonmem_file --output_file=$nonmem"default.out"
+
+#varying cache size
+for csize in 128 512 1024 2048
+do
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --dcache_size=$csize --trace_file=$mem_file --output_file=$mem$csize"cache.out"
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --dcache_size=$csize --trace_file=$nonmem_file --output_file=$nonmem$csize"cache.out"
+done
+
+
+#varying associativity
+for assoc in 1 2 4 8 16
+do
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --dcache_way=$assoc --trace_file=$mem_file --output_file=$mem$assoc"way.out"
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --dcache_way=$assoc --trace_file=$nonmem_file --output_file=$nonmem$assoc"way.out"
+done

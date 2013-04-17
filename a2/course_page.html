@@ -1,0 +1,180 @@
+<html><head>
+<title>CS4290/CS6290/ECE4100/ECE6100</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+</head>
+
+<!-- <body bgcolor="000000" background=bb.gif topmargin="0" leftmargin="0" MARGINWIDTH="0" MARGINHEIGHT="0"> > 
+ <body bgcolor="000000" MARGINWIDTH="0" MARGINHEIGHT="0"> 
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<Tr><td align=center valign=top>
+	<table border=0 cellpadding=0 cellspacing=0 width=1000 height=100%>
+	<tr valign=top>
+		<td background=pbg10.gif><img src=pbg1.gif></td>
+		<td width=778 align=center bgcolor=black>
+			<table border=0 cellpadding=0 cellspacing=0 width=776>
+
+
+				<Tr><Td height=12></td></tR>
+				<tr><Td><img src=title.jpg></td></tr>
+				<tr><Td height=4></td></tr>
+				<Tr><td>
+					<!-----Navigation----->
+						<body><table border="0" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+
+
+
+							</tr>
+						</tbody></table>
+					<!-----Navigation----->
+				
+				
+				
+					<table border="0" cellpadding="0" cellspacing="25" width="100%">
+
+</table><table border="0" width="100%">
+<tbody><tr align="left">
+<td align="left">
+
+<center><h1>CS4290/CS6290/ECE4100/ECE6100 High-Performance Computer Architecture</h1></center>
+<center><h1> Fall 2012 </h1></center>
+
+
+<br><br>
+</td>
+</tr>
+</tbody></table>
+<center>
+<table>
+<tbody><tr>
+<td align="CENTER" valign="TOP"><b>[<a href="http://www.cc.gatech.edu/%7Ehyesoon/fall12/index.html">Home]</a>[<a href="http://www.cc.gatech.edu/%7Ehyesoon/fall12/overview.html">Course overview</a>][<a href="http://www.cc.gatech.edu/%7Ehyesoon/fall12/schedule.html">Schedule</a>][<a href="http://www.cc.gatech.edu/%7Ehyesoon/fall12/reading.html">Reading</a>][<a href="http://comparch.gatech.edu/courses/fall12/hpca/hw.html">Homeworks</a>]
+</b></td></tr>
+</tbody></table>
+</center> 
+
+<hr>
+
+
+Useful Links <br>
+<a href="http://www.pintool.org/downloads.html"> Pin</a> <br>
+<!--<a href="http://terpconnect.umd.edu/%7Eajaleel/Pin/"> Pin tutorial(an old version but more basics) </a><br>-->
+
+<hr>
+
+  
+
+
+<h3>Programming Assignment #1: In-order 5-stage pipeline design </h3>
+<ul>
+<li><a href="http://comparch.gatech.edu/courses/fall12/hpca/prog1.html">Assignment #1 </a> 
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/faq1.html"> FAQ </a> <font color="red">  </font>  
+  </li><li> TA Info: 
+  <ul> 
+    <li>(office hours: Ching-Kai (Kyle) Liang - Wed. 2pm~3pm, Fri.  2pm~3pm, @Klaus 2335, Klaus 2337(if Klaus 2335 is occupied) ) <br>
+    </li><li>(office hours: Dilan D. Manatunga -     Tue. 3pm~4pm, Thr. 12pm~1pm, @Klaus 2335 ) <br> 
+  </li></ul> 
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/test_case_readme.pdf">Test Case README </a>
+  (<a href="http://comparch.gatech.edu/courses/fall12/hpca/sample_trace.tar.gz">sample_trace.tar.gz</a>)
+<!-- <li><a href="prog1_sol.html"> Solutions for the questions </a>--> 
+<!--
+<li>How to compile sim.cpp without pin. 
+<p> <ul> 
+<li> please download <a href="lab1nopin/common.h">common.h</a>, <a href="lab1nopin/trace.h">trace.h</a> <a href="lab1nopin/userknob.h">userknob.h</a> 
+and type "g++ -lz sim.cpp" <br>
+<li> Note that compiling without pin feature is provided to help your debug. <font color ="red"> Your solution must be compiled with the original header files and makefile and must be executed using Pin. </font> <br>
+<li> How to run a simulation? <br> <ul> Just type "./a.out". This method does not take any arguments. <br> </ul> 
+<li> Using this method, you have to change  knob variables (input parameters) and trace file names manually in the userknob.h and trace.h files every time you like to change the values.  <br> 
+</p></ul>
+-->
+
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/tracegen.tar.gz">  Trace generator editor </a> <br>
+ 
+  To help debug, a tracegenerator tool kit is provided. You can write an
+ input using a text format (the input format is described in README and a
+ sample input is provided. (input.txt)). Please compile the toolkit with
+ "make command" and it will produce a trace file that can be read from 
+the simulator. 
+Please note that the end of trace file is not created correctly so you 
+must specify the number of instructions to simulate in the simulator. <br> 
+e.g.) sim  --print_inst=1 --trace_file="test1.pzip" --max_inst_count=9  <br> 
+
+<!-- <li><a href="test.html"> Test cases </a><br>  -->
+<br><br>
+</li></ul>
+
+<h3>Programming Assignment #2: Memory System </h3>
+<ul>
+  <li><a href="http://comparch.gatech.edu/courses/fall12/hpca/prog2.html">Assignment #2 </a>
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/faq2.html"> FAQ </a>    
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/sim1.cpp">Solution of lab1</a>
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/4.lec_lab2.pptx"> Power point version of cases (4.lec_lab2.pptx) </a>
+  <ul>
+    <li><a href="http://comparch.gatech.edu/courses/fall12/hpca/lab2/testcases_lab2.tar.gz">testcases_lab2.tar.gz</a> (Last update 9/20) - The run script is included where you can find the parameter settings to get the following outputs
+    </li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/lab2/testcases_output_lab2.tar.gz">testcases_output_lab2.tar.gz</a> (Last update 9/21)
+  </li></ul>
+</li><li><a href="http://comparch.gatech.edu/courses/fall12/hpca/hint2.html"><font="blink"> Hints! </font="blink"></a>
+ </li><li> TA info: 
+  <ul> 
+    <li>(office hours: Junghee Lee - Mon. 2pm~3pm, Wed.  2pm~3pm, @common area in front of Klaus 2312)<br>
+    </li><li>(office hours: Prashant Nair - Wed. 3pm~4pm, Fri. noon~1pm, @common area in front of Klaus 2312) <br> 
+  </li></ul> 
+ 
+ </li><li>  Useful material to study before the assignment if you are not good at C/C++ <br> 
+  <ul> 
+
+    <li> C++: list container (e.g., <a href="http://www.cplusplus.com/reference/stl/list/"> exp1 </a>, <a href="http://www.csci.csusb.edu/dick/samples/stl.html#Queues"> exp2</a> )
+    </li><li> Pointers to pointers (e.g., <a href="http://www.eskimo.com/%7Escs/cclass/int/sx8.html"> exp1 </a>)  
+    </li><li> You do not necessary to understand the followings but if you want.... 
+      <ul> 
+	<li> Makefile (e.g., <a href="http://mrbook.org/tutorials/make/"> exp1 </a>)
+	</li><li>Compling multiple files, (e.g.,<a href="http://crasseux.com/books/ctutorial/Compiling-multiple-files.html#Compiling%20multiple%20files"> exp1</a> ),  extern variables (e.g.  <a href="http://crasseux.com/books/ctutorial/External-variables.html"> exp1 </a>) 
+
+        </li><li> How to use GDB (e.g. <a href="http://cs.baylor.edu/%7Edonahoo/tools/gdb/tutorial.html"> exp1 </a>). 
+
+      </li></ul>
+			       
+    </li></ul>
+
+
+</li></ul>
+
+<h3>Programming Assignment #3: G-share branch predictor and a deeper pipeline machine  </h3>
+<ul>
+</ul>
+
+
+<h3>Programming Assignment #4: Multi-threaded Machine</h3>
+<ul>
+</ul>
+
+<h3>Programming Assignment #5: Power Simulation</h3>
+<ul>
+</ul>
+<h3> CS6290/ECE6100 Paper Survey and Project Report </h3>
+<ul>
+
+</ul>
+
+
+
+
+
+
+
+
+
+</body></html>
+<!--  LocalWords:  Hyesoon Ferst KACB Tech's HPS Microarchitecture DMP CGO ISCA
+ -->
+<!--  LocalWords:  microarchitecture Runahead prefetchers HPCA WMPI SBAC IJPP
+ -->
+<!--  LocalWords:  pdf DGC Homeworks superscalar CMP sim cpp userknob lz gzread
+ -->
+<!--  LocalWords:  sizeof SMT makefile tracegenerator README txt intel pzip Kai
+ -->
+<!--  LocalWords:  readtrace printinst tracename CS4290 Ching Liang 2pm 3pm 4pm
+ -->
+<!--  LocalWords:  Dilan Manatunga Thr 12pm 1pm test1 exp1 exp2 Multi CS6290
+ -->
+<!--  LocalWords:  ECE6100
+ -->

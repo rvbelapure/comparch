@@ -1,0 +1,2 @@
+1 ST  -1 1 R1 -1 16   2           NOT_CF  0 0      MEM_ST  
+2 LD  R2 1 R3 -1 16   2           NOT_CF  0 0      MEM_LD  

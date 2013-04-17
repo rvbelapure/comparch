@@ -1,0 +1,61 @@
+*******************************************************************
+* Errata 9/19
+*******************************************************************
+
+Remove the following two lines in the cache_read function of the cache.cpp file
+
+	cache->cache_entry[line_num][ii].lru = cycle_count;
+	cache->cache_entry[line_num][ii].valid = true;
+
+*******************************************************************
+* Errata 9/18
+*******************************************************************
+
+Kindly Make the following changes to the source files:
+
+1. sim.cpp
+
+	a. memory_c main_memory(); 
+		is not needed. we created main_memory inside simulator_main().
+
+	b. add
+		uint64_t dcache_hit_count = 0;
+
+	c. add
+		out << "Total D-cache hit: " << dcache_hit_count << endl;
+	to print_stats() function
+
+2. cache.cpp
+
+	a. Please use the updated source code for cache.cpp
+	
+	b. Kindly initialize 
+		int lru_index = 0;
+   	at the beginning of get_repl_index() function definition
+  	
+	c. Kindly edit cache->entry_size variable in cache_init() 		function definition to
+
+	cache->entry_size = cache_size*1024/(block_size)/assoc;
+
+3. memory.cpp
+
+	a. initialize
+		for(int ii=0;ii<m_dram_bank_num;ii++)
+		 	dram_bank_open_row[ii] = -1;
+	    in void memory_c::init_mem()
+
+	b. in memory_c::check_piggyback(Op *mem_op)
+		return true;
+	    if piggyback can be done
+
+		return false;
+	    if piggyback is not possible
+	
+	c.  in the function definition search_matching_mshr()
+	    kindly remove the second 
+		return entry;
+	
+	d.  in the function definition search_matching_mshr_itr();
+	    kindly remove the second
+		return cii;
+		

@@ -1,0 +1,11 @@
+1 LD  R1 1 R8 -1 16   2           NOT_CF  0 0      MEM_LD  
+2 LD  R2 1 R8 -1 18   2           NOT_CF  0 0      MEM_LD  
+3 ST  -1 1 R2 -1 64   2           NOT_CF  0 0      MEM_ST  
+4 LD  R3 1 R8 -1 64   2           NOT_CF  0 0      MEM_LD  
+5 LD  R4 1 R8 -1 8208   2           NOT_CF  0 0      MEM_LD  
+6 ST  -1 1 R2 -1 8208   2           NOT_CF  0 0      MEM_ST  
+7 LD  R5 1 R8 -1 256   2           NOT_CF  0 0      MEM_LD  
+8 LD  R6 1 R8 -1 8208   2           NOT_CF  0 0      MEM_LD  
+9 ST  -1 1 R1 -1 8210   2           NOT_CF  0 0      MEM_ST  
+10 LD  R3 1 R8 -1 16   2           NOT_CF  0 0      MEM_LD  
+11 LD  R7 1 R8 -1 64   2           NOT_CF  0 0      MEM_LD  

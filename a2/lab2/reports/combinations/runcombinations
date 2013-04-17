@@ -1,0 +1,20 @@
+#!/bin/bash
+
+mem="mem-trace-"
+nonmem="non-mem-trace-"
+
+mem_file="mem-trace.pzip"
+nonmem_file="non-mem-trace.pzip"
+
+
+for csize in 128 512 1024 2048
+do
+	for assoc in 1 2 4 8 16
+	do
+
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --dcache_size=$csize --dcache_way=$assoc --trace_file=$mem_file --output_file=$mem"cache"$csize"-way"$assoc".out"
+
+./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --perfect_dcache=0 --dcache_latency=5 --dcache_size=$csize --dcache_way=$assoc --trace_file=$nonmem_file --output_file=$nonmem"cache"$csize"-way"$assoc".out"
+	done
+done
+
