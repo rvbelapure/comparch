@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#for fid in 1 2
+#for fid in 3
+for fid in 4
+do
+	fname="test"$fid".pzip"
+
+	for hlen in 2 4 8 10 12 16
+	do
+		outfile="test"$fid"_hlen"$hlen".out"
+		echo "file = "$fid" hlen = "$hlen
+		./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --use_bpred=1 --bpred_type=3  --bpred_hist_len=$hlen --enable_vmem=1 --tlb_entries=4 --vmem_page_size=4096 --print_pipe_freq=1 --perfect_dcache=0 --dcache_latency=5 --dcache_size=512 --dcache_way=12 --mem_latency_row_hit=100 --mem_latency_row_miss=200 --trace_file=$fname --output_file=$outfile > /dev/null &
+	done
+	for tlbsize in 1 4 16
+	do
+		outbase="test"$fid"_tlbsize"$tlbsize
+
+		echo "file = "$fid" tlbsize = "$tlbsize" page = 4K"
+		./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --use_bpred=1 --bpred_type=3  --bpred_hist_len=12 --enable_vmem=1 --tlb_entries=$tlbsize --vmem_page_size=4096 --print_pipe_freq=1 --perfect_dcache=0 --dcache_latency=5 --dcache_size=512 --dcache_way=12 --mem_latency_row_hit=100 --mem_latency_row_miss=200 --trace_file=$fname --output_file=$outbase"_page4K.out" > /dev/null &
+
+		echo "file = "$fid" tlbsize = "$tlbsize" page = 8K"
+		./sim --print_inst=0 --max_inst_count=0 --max_sim_count=0 --use_bpred=1 --bpred_type=3  --bpred_hist_len=12 --enable_vmem=1 --tlb_entries=$tlbsize --vmem_page_size=8192 --print_pipe_freq=1 --perfect_dcache=0 --dcache_latency=5 --dcache_size=512 --dcache_way=12 --mem_latency_row_hit=100 --mem_latency_row_miss=200 --trace_file=$fname --output_file=$outbase"_page8K.out" > /dev/null &
+	done
+	wait
+done

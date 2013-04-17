@@ -1,0 +1,12 @@
+Date: 12 October 2012
+------------------------
+
+Added vmem.o to Makefile
+
+Added return value to tlb_init
+
+Added return value to bpred_init
+
+Changed BPRED_PHT_CTR_MAX from 2 to 3
+
+Changed BPRED_PHT_CTR_INIT from 1 to 2

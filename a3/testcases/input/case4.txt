@@ -1,0 +1,10 @@
+0   LD    R3 1 R9 -1     123456 4        NOT_CF 0 0      MEM_LD
+4   LD    R4 1 R9 -1     227552 4        NOT_CF 0 0      MEM_LD
+8   LD    R5 1 R9 -1     333456 4        NOT_CF 0 0      MEM_LD
+12  LD    R6 1 R9 -1     447552 4        NOT_CF 0 0      MEM_LD
+16  LD    R3 1 R9 -1     593456 4        NOT_CF 0 0      MEM_LD
+20  LD    R3 1 R9 -1     123456 4        NOT_CF 0 0      MEM_LD
+24  IADD  R7 2 R3 R4          0 0        NOT_CF 0 0      NOT_MEM
+24  IADD  R8 2 R5 R6          0 0        NOT_CF 0 0      NOT_MEM
+
+

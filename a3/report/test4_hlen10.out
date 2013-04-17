@@ -1,0 +1,15 @@
+Total instruction: 14949126
+Total cycles: 46057806
+IPC: 0.324573
+Total I-cache miss: 0
+Total D-cache miss: 7695
+Total D-cache hit: 5476157
+Total data hazard: 2712004
+Total control hazard : 2490792
+Total DRAM ROW BUFFER Hit: 2132
+Total DRAM ROW BUFFER Miss: 1152
+Total Store-load forwarding: 27
+Total Branch Predictor Mispredictions: 186460
+Total Branch Predictor OK predictions: 2304332
+Total DTLB Hit: 4775988
+Total DTLB Miss: 353915
